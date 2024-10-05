@@ -5,11 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping
 public class HelloController {
-	
-	@GetMapping("/helloworld")
-	public String hello() {
+
+	@GetMapping("/hello")
+	public String check() {
 		return "welcome to Spring Boot";
 	}
-	
 
 }
