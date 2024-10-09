@@ -10,5 +10,9 @@ public class HelloController {
 	public String check() {
 		return "welcome to Spring Boot";
 	}
+	@GetMapping("/helloworld")
+	public String checking() {
+		return "welcome to Spring Boot application";
+	}
 
 }
