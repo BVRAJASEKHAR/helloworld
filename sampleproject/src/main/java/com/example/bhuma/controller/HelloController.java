@@ -13,6 +13,6 @@ public class HelloController {
 
 	@GetMapping("/helloworld")
 	public String checking() {
-		return "welcome to Spring Boot Application";
+		return "welcome to Spring Boot Application and try to build in jenkins";
 	}
 }
