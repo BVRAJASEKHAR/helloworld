@@ -5,15 +5,13 @@ pipeline {
       steps {
         script {
           echo 'Stage 1'
-          echo 'Hello World'
-          echo 'Hello World1'
-        }
+      }
     }
   }
     stage('Build') { 
          steps { 
-            sh "mvn clean install" 
+            bat 'mvn clean install' 
         }
       }
-}
+   }
 } 
