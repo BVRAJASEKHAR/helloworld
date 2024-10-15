@@ -8,6 +8,10 @@ pipeline {
           echo 'Hello World'
           echo 'Hello World1'
         }
+        stage('Build') { 
+            steps { 
+               sh "mvn clean install" 
+        }
       }
     }
   }
