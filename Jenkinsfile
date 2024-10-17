@@ -17,5 +17,10 @@ pipeline {
            bat 'mvn clean package' 
         }
       }
+     stage('Build') {
+            steps {
+                sh 'docker build -t my-sample-app . -f Dockerfile'
+            }
+        }
    }
 } 
