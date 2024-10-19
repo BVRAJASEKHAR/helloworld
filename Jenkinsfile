@@ -19,7 +19,7 @@ pipeline {
       }
      stage('Build-dockerimage') {
             steps {
-                sh 'docker build -t my-sample-app . -f Dockerfile'
+                bat 'docker build -t my-sample-app . -f Dockerfile'
             }
         }
    }
