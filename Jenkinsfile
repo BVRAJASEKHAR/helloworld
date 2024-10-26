@@ -22,7 +22,7 @@ pipeline {
                 bat 'docker build -t my-sample-app . -f Dockerfile'
             }
         }
-    stage('run-dockerimage') {
+    stage('run-dockercontainer') {
             steps {
                 bat 'docker run -p 9900:8081 my-sample-app'
             }
